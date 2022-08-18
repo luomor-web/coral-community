@@ -50,6 +50,7 @@ sudo docker-compose up coral
 sudo docker-compose up -d coral
 
 http://49.232.6.131:8106
+https://coral.7otech.com/
 
 find . -name "docker-compose.yml"|xargs -I {} grep -r 'redis' {}
 find . -name "docker-compose.yml"|xargs -I {} grep -r '6381' {}

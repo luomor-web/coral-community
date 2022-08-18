@@ -1,7 +1,7 @@
 <script>
 	export default {
 		globalData: {
-			domain: 'http://localhost:30000',
+			domain: 'https://coral.7otech.com/',
 			randomKey: "OQlRb3WW89yfycQb97Rrt1Ef2OprRyKp",
 			appName: "Coral"
 		},
