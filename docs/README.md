@@ -18,9 +18,20 @@ cp ../coral-backend/coral-backend-mp/target/coral-backend-mp-1.0.0.jar coral-fe/
 
 sudo docker-compose up
 sudo docker-compose up -d
+sudo docker-compose ps
 
 sudo docker-compose up coral-mysql80
 sudo docker-compose up -d coral-mysql80
+
+mysql -h127.0.0.1 -uroot -p -P3301
+coral123456
+create database coral default character set utf8mb4 collate utf8mb4_unicode_ci;
+use coral;
+create user 'coral'@'127.0.0.1' identified by 'coral123456';
+grant all privileges on coral.* to 'coral'@'127.0.0.1';
+flush privileges;
+
+mysql -h127.0.0.1 -uroot -p -P3301 coral < ../coral-community.sql
 
 sudo docker-compose up coral-mongodb
 sudo docker-compose up -d coral-mongodb
