@@ -17,6 +17,32 @@ services:
       MYSQL_ROOT_PASSWORD: coral123456
     restart: always
 
+  coral-mongodb:
+    image: mongo
+    container_name: coral-mongodb
+    restart: always
+    ports:
+      - 27011:27017
+    volumes:
+      - "./mongodb/configdb:/data/configdb"
+      - "./mongodb/db:/data/db"
+      - /etc/localtime:/etc/localtime
+    # command: mongod --auth
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root       #初始化管理员用户名和密码
+      - MONGO_INITDB_ROOT_PASSWORD=123456
+      - TZ="Asia/Shanghai"
+    tty: true
+
+  coral-mongo-express:
+    image: mongo-express
+    container_name: coral-mongo-express
+    restart: always
+    ports:
+      - 8107:8081
+    environment:
+      ME_CONFIG_MONGODB_URL: "mongodb://root:123456@coral-mongodb:27017"
+
   coral:
     build:
       context: coral-fe
