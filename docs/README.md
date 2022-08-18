@@ -10,6 +10,11 @@ ln -s application-prod.properties.txt application-prod.properties
 
 cd coral-community/coral-backend/coral-backend-mp
 mvn clean package
+cd ../../docker/
+cd coral-fe
+ln -s ../coral/Dockerfile Dockerfile
+cd ..
+cp ../coral-backend/coral-backend-mp/target/coral-backend-mp-1.0.0.jar coral-fe/ 
 
 sudo docker-compose up
 sudo docker-compose up -d
