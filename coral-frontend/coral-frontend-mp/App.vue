@@ -3,7 +3,7 @@
 		globalData: {
 			domain: 'http://localhost:30000',
 			randomKey: "OQlRb3WW89yfycQb97Rrt1Ef2OprRyKp",
-			appName: "Live"
+			appName: "Coral"
 		},
 		onLaunch: function() {
 			console.log('App Launch')
