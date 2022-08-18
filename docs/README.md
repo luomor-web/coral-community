@@ -39,4 +39,6 @@ sudo docker-compose up -d coral
 
 find . -name "docker-compose.yml"|xargs -I {} grep -r 'redis' {}
 find . -name "docker-compose.yml"|xargs -I {} grep -r '6381' {}
+
+sudo docker rmi `docker images | grep none | awk '{print $3}'`
 ```
