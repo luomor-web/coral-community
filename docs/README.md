@@ -55,6 +55,7 @@ sudo docker-compose up -d coral
 
 sudo docker-compose logs -f
 sudo docker exec -it coral-fe bash
+sudo docker-compose logs -f coral
 
 http://49.232.6.131:8106
 https://coral.7otech.com/
