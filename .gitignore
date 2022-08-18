@@ -66,3 +66,5 @@ hs_err_pid*
 
 Thumbs.db
 
+application-dev.properties.txt
+application-prod.properties.txt
