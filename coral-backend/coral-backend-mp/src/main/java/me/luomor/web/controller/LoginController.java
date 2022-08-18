@@ -25,7 +25,6 @@ public class LoginController {
     @ApiOperation(value = "登录")
     @PostMapping(value = "/login")
     public BaseResponse<LoginUserDTO> login(@Valid @RequestBody LoginRequest request) throws Exception {
-
         return new BaseResponse<LoginUserDTO>().setBody(loginService.login(request));
     }
 
