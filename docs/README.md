@@ -7,4 +7,10 @@ mvn clean package
 cd coral-community/coral-backend/coral-backend-mp/src/main/resources
 ln -s application-dev.properties.txt application-dev.properties
 ln -s application-prod.properties.txt application-prod.properties
+
+sudo docker-compose up
+sudo docker-compose up -d
+
+sudo docker-compose up coral-mysql80
+sudo docker-compose up -d coral-mysql80
 ```
