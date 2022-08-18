@@ -8,6 +8,9 @@ cd coral-community/coral-backend/coral-backend-mp/src/main/resources
 ln -s application-dev.properties.txt application-dev.properties
 ln -s application-prod.properties.txt application-prod.properties
 
+cd coral-community/coral-backend/coral-backend-mp
+mvn clean package
+
 sudo docker-compose up
 sudo docker-compose up -d
 
