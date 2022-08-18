@@ -43,6 +43,26 @@ services:
     environment:
       ME_CONFIG_MONGODB_URL: "mongodb://root:123456@coral-mongodb:27017"
 
+  coral-redis:
+    #定义主机名
+    container_name: coral-redis
+    #使用的镜像；注意这里的版本要与第2步redis版本一致
+    image: redis:6.0.6
+    #容器的映射端口
+    ports:
+      - 6381:6379 #注意第二个端口必须是redis.conf中的端口号
+    command: redis-server /etc/redis.conf
+    #定义挂载点
+    volumes:
+      - ./data:/data #挂载/docker-compose/redis/data至容器
+      - ./conf/redis.conf:/etc/redis.conf #挂载conf至容器
+    privileged: true   #环境变量
+    environment:
+      - TZ=Asia/Shanghai
+      - LANG=en_US.UTF-8
+    #docker 重启后，容器自启动
+    restart: always
+
   coral:
     build:
       context: coral-fe

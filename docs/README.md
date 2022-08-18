@@ -15,4 +15,5 @@ sudo docker-compose up coral-mysql80
 sudo docker-compose up -d coral-mysql80
 
 find . -name "docker-compose.yml"|xargs -I {} grep -r 'redis' {}
+find . -name "docker-compose.yml"|xargs -I {} grep -r '6381' {}
 ```
