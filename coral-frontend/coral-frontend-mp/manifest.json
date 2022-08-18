@@ -1,6 +1,6 @@
 {
     "name" : "coral-frontend",
-    "appid" : "__UNI__9D31753",
+    "appid" : "__UNI__1EE112F",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -57,7 +57,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxff0218827734f10a",
+        "appid" : "wx35b813d1be4aa975",
         "setting" : {
             "urlCheck" : false,
             "postcss" : true
