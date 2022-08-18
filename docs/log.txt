@@ -27,3 +27,16 @@ show tables;
 | video            |
 +------------------+
 23 rows in set (0.00 sec)
+
+select * from artist\G
+*************************** 1. row ***************************
+                  id: 86643
+                name: fddm
+    mp_weixin_app_id: wxff0218827734f1123
+mp_weixin_app_secret: 228558fed81f0fb73f004940732e
+        mp_qq_app_id: 11103259
+    mp_qq_app_secret: y5i3OGXQiIS
+          random_key: OQlRb3WW89yfycQb97Rrt1Ef2OprRyKp
+         create_time: 2020-06-05 19:04:12
+         update_time: 2020-10-14 00:02:23
+1 row in set (0.00 sec)
