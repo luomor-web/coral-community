@@ -1,0 +1,29 @@
+show tables;
++------------------+
+| Tables_in_coral  |
++------------------+
+| activity         |
+| artist           |
+| collect_relation |
+| comment          |
+| feedback         |
+| follow_relation  |
+| joined_activity  |
+| like_relation    |
+| moment           |
+| moment_image     |
+| moment_video     |
+| notification     |
+| private_letter   |
+| region_city      |
+| region_province  |
+| share            |
+| tag              |
+| tag_relation     |
+| topic            |
+| topic_relation   |
+| user             |
+| venue            |
+| video            |
++------------------+
+23 rows in set (0.00 sec)

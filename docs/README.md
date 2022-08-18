@@ -25,6 +25,10 @@ sudo docker-compose up -d coral-mysql80
 
 mysql -h127.0.0.1 -uroot -p -P3301
 coral123456
+
+show databases;
+use coral;
+
 create database coral default character set utf8mb4 collate utf8mb4_unicode_ci;
 use coral;
 create user 'coral'@'127.0.0.1' identified by 'coral123456';
