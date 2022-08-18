@@ -42,7 +42,6 @@ sudo docker-compose up -d coral-mongo-express
 sudo docker-compose up coral-redis
 sudo docker-compose up -d coral-redis
 
-
 sudo docker-compose build
 
 sudo docker-compose up coral
